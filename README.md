@@ -1,4 +1,16 @@
 # quket 0.9.3
+
+
+[How to build auto-generated documetation](./sphinx/sphinx_ghpages_walkthrough.md)
+
+
+
+---
+
+# readme under this
+
+
+
 ```
 
  Quket: Quantum Unified Kernel for Emulator Toolbox 
