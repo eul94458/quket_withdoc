@@ -185,3 +185,11 @@ But:
 ![walkthrough_iamges3](./walkthrough_iamges/walkthrough_iamges3.png)
 ![walkthrough_iamges4](./walkthrough_iamges/walkthrough_iamges4.png)
 ![walkthrough_iamges5](./walkthrough_iamges/walkthrough_iamges5.png)
+
+- Question:
+  - The website look terrible on my smartphone. The layout is doomed.
+  
+  > 1. go to `docs/`
+  > 2. replace every appearence of `_statics` with `statics`. Get rid of the underscore.  
+  > 3. `_statics` is referenced inside .html files. Replace those too.  
+  > 4. If this does not fix it, apply the same modification to all underscored folder names.  
