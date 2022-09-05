@@ -96,6 +96,8 @@ Things we care are:
 1. Replace the whole conf.py with the one that I made.
 2. Get the templates that I made. Because the default template is useless.
 
+You can find these files in this repository with the same file structure.
+
 | Where should it belongs to                     | File Link                                                         |
 |------------------------------------------------|-------------------------------------------------------------------|
  | source/conf.py                                 | [conf.py](./source/conf.py)                                       |
@@ -113,11 +115,15 @@ Things we care are:
 | source/_templates/autoapi/python/module.rst    | [module.rst](./source/_templates/autoapi/python/module.rst)       |
 | source/_templates/autoapi/python/package.rst   | [package.rst](./source/_templates/autoapi/python/package.rst)     |
 
-> Question: You said we only use sphinx-autoapi, why we need templates for sphinx-apidoc?
-> > There is a bug that during the process of auto-generation, some functions and modules are being routed to the sphinx-apidoc routine. Those template is to route them back to sphinx-autoapi.
+- Question: 
+  - You said we only use sphinx-autoapi, why we need templates for sphinx-apidoc?
 
-> Question: Why not sphinx-apidoc?
-> > sphinx-apidoc by the offical is a failure and unuseable. That's what sphinx-autoapi exist. 
+  > There is a bug that during the process of auto-generation, some functions and modules are being routed to the sphinx-apidoc routine. Those template is to route them back to sphinx-autoapi.
+
+- Question: 
+  - Why not sphinx-apidoc?
+
+  > sphinx-apidoc by the offical is a failure and unuseable. That's what sphinx-autoapi exist. 
 
 # Build and Preview the website
 
@@ -138,10 +144,19 @@ If there is no any fatal issue during the auto-generation process, you should be
 http://127.0.0.1:8000
 ```
 
-> Question: The building process is not stopping. It is doing the same thing over and over.
-> > 1. `Ctrl+C` to stop that.
-> > 2. Run `sphinx-autobuild ./source ../docs` again.
-> > 3. If this does not fix the problem, than it is a fatal issue that sphinx cannot parse your package's docstrings. You should review your docstrings.
+- Question: 
+  - The building process is not stopping. It is doing the same thing over and over.
+  
+  > 1. `Ctrl+C` to stop that.
+  > 2. Run `sphinx-autobuild ./source ../docs` again.
+  > 3. If this does not fix the problem, than it is a fatal issue that sphinx cannot parse your package's docstrings. You should review your docstrings.
+
+- Question: 
+  - New changes is not reflected on the http://127.0.0.1:8000.
+  
+  > You need to rebuild the HTML.
+  > First delete `docs/` then delete `sphinx/source/autoapi/`,   
+  > so that sphinx-autobuild detects that and rebuild everything.
 
 # Git commit and Git push
 
