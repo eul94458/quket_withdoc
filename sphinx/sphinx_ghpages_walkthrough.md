@@ -30,7 +30,7 @@ pip install --no-cache-dir sphinx sphinx-autobuild sphinx-autoapi myst_parser sp
 
 | Folder Name      | What is it for                              |
 |------------------|---------------------------------------------|
-| docs             | HTML files if being put here.               |
+| docs             | HTML files are being put here.              |
 | sphinx           | Sphinx if configured here                   |
  | src              | Containing all source code of your package. |
     
@@ -116,14 +116,14 @@ You can find these files in this repository with the same file structure.
 | source/_templates/autoapi/python/package.rst   | [package.rst](./source/_templates/autoapi/python/package.rst)     |
 
 - Question: 
-  - You said we only use sphinx-autoapi, why we need templates for sphinx-apidoc?
+  - You said we only use sphinx-autoapi, why do we need templates for sphinx-apidoc?
 
   > There is a bug that during the process of auto-generation, some functions and modules are being routed to the sphinx-apidoc routine. Those template is to route them back to sphinx-autoapi.
 
 - Question: 
   - Why not sphinx-apidoc?
 
-  > sphinx-apidoc by the offical is a failure and unuseable. That's what sphinx-autoapi exist. 
+  > sphinx-apidoc made by the offical is a failure and unuseable. That's what sphinx-autoapi exist. 
 
 # Build and Preview the website
 
@@ -149,12 +149,12 @@ http://127.0.0.1:8000
   
   > 1. `Ctrl+C` to stop that.
   > 2. Run `sphinx-autobuild ./source ../docs` again.
-  > 3. If this does not fix the problem, than it is a fatal issue that sphinx cannot parse your package's docstrings. You should review your docstrings.
+  > 3. If this does not fix the problem, then it is a fatal issue that sphinx cannot parse your package's docstrings. You should review your docstrings.
 
 - Question: 
   - New changes is not reflected on the http://127.0.0.1:8000.
   
-  > You need to rebuild the HTML.
+  > You need to rebuild the HTML.  
   > First delete `docs/` then delete `sphinx/source/autoapi/`,   
   > so that sphinx-autobuild detects that and rebuild everything.
 
@@ -179,7 +179,7 @@ But:
 1. If you are not going to publish it right now, you can do this later. 
 2. If you want to see the effect of the documentation webpage, you can do it locally using sphinx-autobuild.
 
-# Setup the GitHub Pages (Optional)
+# Set up the GitHub Pages (Optional)
 
 ![walkthrough_iamges2](./walkthrough_iamges/walkthrough_iamges2.png)
 ![walkthrough_iamges3](./walkthrough_iamges/walkthrough_iamges3.png)
