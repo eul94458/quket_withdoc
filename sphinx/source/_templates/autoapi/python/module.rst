@@ -38,9 +38,6 @@
 {% set visible_submodules = obj.submodules|selectattr("display")|list %}
 {% set visible_substuffs = visible_subpackages + visible_submodules %}
 
-Overview
----------
-
 .. autoapisummary::
 
 {% for substuffs in visible_substuffs|sort %}
@@ -76,8 +73,7 @@ Overview
 
 {% block attributes scoped %}
 {% if visible_attributes %}
-Attribute Overview
-------------------
+.. rubric:: Attribute Overview
 
 .. autoapisummary::
 
@@ -92,8 +88,7 @@ Attribute Overview
 
 {% block classes scoped %}
 {% if visible_classes %}
-Class Overview
---------------
+.. rubric:: Class Overview
 
 .. autoapisummary::
 
@@ -108,8 +103,7 @@ Class Overview
 
 {% block functions scoped %}
 {% if visible_functions %}
-Function Overview
------------------
+.. rubric:: Function Overview
 
 .. autoapisummary::
 
@@ -125,8 +119,7 @@ Function Overview
 
 {% block exceptions scoped %}
 {% if visible_exceptions %}
-Exception Overview
-------------------
+.. rubric:: Exception Overview
 
 .. autoapisummary::
 
@@ -142,15 +135,12 @@ Exception Overview
 
 ----
 
-APIs
-----
-
 {% if visible_attributes %}
 
-----
 
-Attrubutes
-~~~~~~~~~~
+
+.. rubric:: Attrubutes
+
 
 {% for obj_item in visible_attributes %}
 {{ obj_item.render()|indent(0) }}
@@ -164,10 +154,9 @@ Attrubutes
 
 {% if visible_classes %}
 
-----
 
-Classes
-~~~~~~~
+.. rubric:: Classes
+
 
 {% for obj_item in visible_classes %}
 {{ obj_item.render()|indent(0) }}
@@ -181,10 +170,10 @@ Classes
 
 {% if visible_functions %}
 
-----
 
-Functions
-~~~~~~~~~
+.. rubric:: Functions
+
+
 {% for obj_item in visible_functions %}
 {{ obj_item.render()|indent(0) }}
 
@@ -197,10 +186,8 @@ Functions
 
 {% if visible_exceptions %}
 
-----
+.. rubric:: Exceptions
 
-Exceptions
-~~~~~~~~~~
 
 {% for obj_item in visible_exceptions %}
 {{ obj_item.render()|indent(0) }}
