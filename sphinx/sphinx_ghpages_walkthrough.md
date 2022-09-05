@@ -152,7 +152,7 @@ http://127.0.0.1:8000
   > 3. If this does not fix the problem, then it is a fatal issue that sphinx cannot parse your package's docstrings. You should review your docstrings.
 
 - Question: 
-  - New changes is not reflected on the http://127.0.0.1:8000.
+  - New changes are not reflected on the http://127.0.0.1:8000.
   
   > You need to rebuild the HTML.  
   > First delete `docs/` then delete `sphinx/source/autoapi/`,   
