@@ -9,3 +9,6 @@ contribute/
 *.theta
 *.out
 *.swp
+
+# pycharm
+.idea/
