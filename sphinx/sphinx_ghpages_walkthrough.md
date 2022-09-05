@@ -190,6 +190,6 @@ But:
   - The website look terrible on my smartphone. The layout is doomed.
   
   > 1. go to `docs/`
-  > 2. replace every appearence of `_statics` with `statics`. Get rid of the underscore.  
-  > 3. `_statics` is referenced inside .html files. Replace those too.  
+  > 2. replace every appearence of `_static` with `static`. Get rid of the underscore.  
+  > 3. `_static` is referenced inside .html files. Replace those too.  
   > 4. If this does not fix it, apply the same modification to all underscored folder names.  
